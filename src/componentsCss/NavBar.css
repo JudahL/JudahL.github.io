@@ -1,0 +1,56 @@
+.Nav {
+  background-color: #fdfdfd;
+  height: 3.5em;
+  color: #79ba98;
+  font-family: "Oswald";
+}
+
+.Nav-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.Nav-title {
+  text-align: left;
+  word-spacing: 0.1em;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 0px;
+  float: left;
+  margin-top: 0.1em;
+  margin-left: 0.5em;
+}
+
+.Nav-menu {
+  float: right;
+  margin-top: 0.5em;
+  margin-left: -1em;
+}
+
+.Nav-link {
+  word-spacing: 0.1em;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0px;
+  margin-right: 2em;
+  cursor: pointer;
+  text-decoration: none;
+  color: #68917f;
+
+  /* Transition */
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.Nav-link:hover {
+  color: #79ba98;
+}
+
+@media screen and (max-width: 950px) {
+  .Nav-link {
+    margin-left: 10px;
+  }
+}

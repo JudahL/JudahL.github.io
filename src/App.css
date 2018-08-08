@@ -1,0 +1,42 @@
+.inline-list {
+  display: inline;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.download {
+  color: #68917f;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.download:hover {
+  text-decoration: underline;
+}
+
+.download-large::before {
+  content: "";
+  display: block;
+  height: 4em;
+}
+
+.download-large {
+  color: #0d2e58;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.download-large:hover {
+  color: #ad5de2;
+}
