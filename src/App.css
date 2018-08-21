@@ -1,4 +1,5 @@
 .inline-list {
+  vertical-align: top;
   display: inline;
 }
 
@@ -14,13 +15,14 @@ body,
 }
 
 .download {
-  color: #68917f;
+  color: #21ad71;
   text-decoration: none;
   font-size: 1em;
   font-weight: 600;
 }
 
 .download:hover {
+  color: #e69437;
   text-decoration: underline;
 }
 

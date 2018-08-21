@@ -3,12 +3,14 @@ import "../componentsCss/Skills.css";
 
 export default function Skills() {
   return (
-    <React.Fragment>
-      <h3 className="App-body-title">Skills</h3>
-      <p className="App-body-content">
+    <div className="Content-container">
+      <h3 className="Content-title">
+        SKILLS
+      </h3>
+      <p className="Content-paragraph">
         React.js, Redux, HTML5, Javascript, CSS, Unity, C#, Test-Driven-Development, SOLID Principles.
       </p>
-    </React.Fragment>
+    </div>
   );
 }
 /* old */

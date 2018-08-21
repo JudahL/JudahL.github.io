@@ -2,15 +2,17 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <React.Fragment>
-      <h3 className="App-body-title">Contact</h3>
-      <p className="App-body-content">
+    <div className="Content-container">
+      <h3 className="Content-title">
+        CONTACT
+      </h3>
+      <p className="Content-paragraph">
         Feel free to contact me at:{" "}
         <a className="download" href={"mailto:" + email}>
           {email}
         </a>
       </p>
-    </React.Fragment>
+    </div>
   );
 }
 

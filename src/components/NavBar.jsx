@@ -6,24 +6,26 @@ export default function NavBar() {
   return (
     <nav className="Nav">
       <div className="Nav-container">
-        <h1 className="Nav-title">JL</h1>
-        <ul className="Nav-menu">
-          <li className="inline-list">
-            <Link to="/" className="Nav-link">
+        <h1 className="Nav-title">
+          JUDAH LUCAS
+        </h1>
+        <div className="Nav-menu">
+          <Link to="/">
+            <button className="Nav-link">
               Home
-            </Link>
-          </li>
-          <li className="inline-list">
-            <Link to="/projects" className="Nav-link">
+              </button>
+          </Link>
+          <Link to="/projects">
+            <button className="Nav-link">
               Projects
-            </Link>
-          </li>
-          <li className="inline-list">
-            <Link to="/cv" className="Nav-link">
+              </button>
+          </Link>
+          <Link to="/cv">
+            <button className="Nav-link">
               CV
-            </Link>
-          </li>
-        </ul>
+              </button>
+          </Link>
+        </div>
       </div>
     </nav>
   );

@@ -1,39 +1,38 @@
 .Footer {
   width: 100%;
-  height: 2.5em;
-  padding-top: 0.25em;
-  box-sizing: border-box;
+  height: 10em;
+  padding-top: 1em;
   background-color: #222;
-}
-
-.Footer-container {
-  font-size: 1.2em;
+  box-sizing: border-box;
 }
 
 .Footer-social {
-  width: 50%;
-  text-align: left;
+  display: inline-block;
+  margin-bottom: 3em;
 }
 
 .Footer-column {
   display: inline-block;
   height: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.Footer-column-wide {
-  display: inline-block;
-  width: 50%;
-  height: 100%;
+  padding: 0.5em 0.5em;
+  box-sizing: border-box;
 }
 
 .Footer-link {
-  color: #79ba98;
+ 
+}
+
+.Footer-button {
+  width: 6em;
+  color: #f0f0f0;
   font-weight: 600;
   text-decoration: none;
   font-family: "Oswald";
-  font-size: 1.2em;
+  font-size: 1.5em;
+  padding: 0.2em;
+  background: none;
+  border: 2px #f0f0f0 solid;
+  cursor: pointer;
 
   /* Transition */
   -o-transition: 0.2s;
@@ -43,16 +42,18 @@
   transition: 0.2s;
 }
 
-.Footer-link:hover {
-  color: #fdfdfd;
+.Footer-button:hover {
+  color: #222;
+  background-color: #21ad71;
+  border: 2px #21ad71 solid;
 }
 
 .Footer-created {
-  text-align: right;
-  font-size: 0.8em;
-  font-weight: 600;
-  color: #68917f;
-  margin-right: 10px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 200;
+  color: #21ad71;
+  font-family: "Oswald";
 }
 
 @media screen and (max-width: 500px) {
@@ -60,6 +61,6 @@
     width: 100%;
   }
   .Footer {
-    height: 190px;
+    height: 15em;
   }
 }

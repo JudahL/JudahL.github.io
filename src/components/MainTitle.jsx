@@ -1,22 +1,27 @@
 import React from "react";
-import profilePic from "../images/JudahProfilePic2018.png";
+import profilePic from "../images/JudahProfilePic2018Flat.jpg";
+import '../componentsCss/MainTitle.css';
 
 export default class MainTitle extends React.Component {
+  constructor() {
+    super();
+    this.startFlip = this.startFlip.bind(this);
+  }
+
   state = {
     text: "",
     counter: 0,
     isCalculating: false
   };
 
-  constructor() {
-    super();
-    this.startFlip = this.startFlip.bind(this);
-  }
-
   componentDidMount() {
     this.setState({ text: this.props.text });
-    //this.setState({ text: this.props.text, counter: 0 });
     this.startFlip();
+  }
+
+  componentWillUnmount() {
+    // Making sure that the interval doesn't attempt to call tick() on an unmounted component
+    clearInterval(this.timerID);
   }
 
   startFlip() {
@@ -50,32 +55,23 @@ export default class MainTitle extends React.Component {
     this.setState({ text: chars.join(""), counter: c + 1 });
   }
 
-  getText() {
-    return this.state.text;
-  }
-
-  getDesc() {
-    return this.props.desc;
-  }
-
   render() {
+    const { text } = this.state;
+    const { desc: description } = this.props;
     return (
-      <React.Fragment>
-        <div className="App-body-header">
-          <div className="App-body-header-container">
-            <div className="Title-container">
-              <h2 className="Title-name">
-                <a onClick={this.startFlip}>{this.getText()}</a>
-              </h2>
-              <h2 className="Title-desc">{this.getDesc()}</h2>
-            </div>
-            {this.props.showPic
-              ? <img src={profilePic} className="Title-pic" />
-              : null
-            }
+      <div className="MainTitle">
+        <div className="MainTitle-container">
+          <a onClick={this.startFlip}>
+            <h2 className="MainTitle-name">
+              {text}
+            </h2>
+          </a>
+          <h2 className="MainTitle-desc">{description}</h2>
+          <div className="MainTitle-image-container">
+            <img src={profilePic} className="MainTitle-image" />
           </div>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }

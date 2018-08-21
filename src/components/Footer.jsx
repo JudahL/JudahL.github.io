@@ -5,33 +5,33 @@ export default function Footer() {
   return (
     <footer className="Footer">
       <div className="Footer-container">
-        <div className="Footer-column-wide">
-          <div className="Footer-social">
-            <div className="Footer-column">
-              <a
-                className="Footer-link"
-                href="https://www.linkedin.com/in/judah-lucas-29942743"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+        <div className="Footer-social">
+          <div className="Footer-column">
+            <a
+              className="Footer-link"
+              href="https://www.linkedin.com/in/judah-lucas-29942743"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="Footer-button">
                 LinkedIn
-              </a>
-            </div>
-            <div className="Footer-column">
-              <a
-                className="Footer-link"
-                href="https://github.com/JudahL"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              </button>
+            </a>
+          </div>
+          <div className="Footer-column">
+            <a
+              className="Footer-link"
+              href="https://github.com/JudahL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="Footer-button">
                 GitHub
-              </a>
-            </div>
+              </button>
+            </a>
           </div>
         </div>
-        <div className="Footer-column-wide">
-          <p className="Footer-created">created by judah lucas with react.js</p>
-        </div>
+        <p className="Footer-created">created by judah lucas with react.js</p>
       </div>
     </footer>
   );
