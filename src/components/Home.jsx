@@ -7,7 +7,7 @@ import MainTitle from "./MainTitle";
 export default function Home() {
   return (
     <React.Fragment>
-      <MainTitle text="SACUL HADUJ" desc="FULL-STACK DEVELOPER" showPic={true} />
+      <MainTitle text="SACUL HADUJ" desc="SOFTWARE DEVELOPER" />
       <AboutMe />
       <Skills />
       <Contact />

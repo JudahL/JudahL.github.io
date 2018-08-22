@@ -56,6 +56,10 @@
   margin-left: 10em;  
 }
 
+.ProjectPage-image {
+  width: 100%;
+}
+
 
 @media screen and (max-width: 875px) {
   .Content {

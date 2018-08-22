@@ -7,9 +7,10 @@ export default function AboutMe() {
         ABOUT
       </h3>
       <p className="Content-paragraph">
-        I'm a software developer from Scotland. I've spent the last few years
-        building cross-platform applications and games in Unity. Now I'm looking
-        to take my skills to Web Development.
+        I'm a software developer from Scotland. I have experience in building responsive full-stack web applications and cross-platform applications.
+      </p>
+      <p className="Content-paragraph">
+        I'm always looking to further my ability to write code. Whether that be focusing on existing skills or picking up new technologies.
       </p>
     </div>
   );

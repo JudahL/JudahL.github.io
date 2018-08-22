@@ -8,23 +8,29 @@ export default function Skills() {
         SKILLS
       </h3>
       <p className="Content-paragraph">
-        React.js, Redux, HTML5, Javascript, CSS, Unity, C#, Test-Driven-Development, SOLID Principles.
+        <h4 className="Content-subtitle">
+          Languages:
+        </h4>
+        HTML, Javascript, CSS, C#, Python.
+      </p>
+      <p className="Content-paragraph">
+        <h4 h4 className="Content-subtitle">
+          Frameworks/Libraries:
+        </h4>
+        React, Redux, Node.js, Express, MongoDB, Unity.
+      </p>
+      <p className="Content-paragraph">
+        <h4 h4 className="Content-subtitle">
+          Editors:
+        </h4>
+        Visual Studio Code, Visual Studio, Brackets, Sublime Text.
+      </p>
+      <p className="Content-paragraph">
+        <h4 className="Content-subtitle">
+          Other:
+        </h4>
+        Test-Driven-Development, Version Control(Git/GitHub), SOLID Principles, Dependency Injection.
       </p>
     </div>
   );
 }
-/* old */
-/*<h3 className="App-body-title">Skills</h3>
-      <div className="Skills">
-        <ul>
-          <li className="Skills-list-item">React.js</li>
-          <li className="Skills-list-item">Redux</li>
-          <li className="Skills-list-item">HTML5</li>
-          <li className="Skills-list-item">JavaScript</li>
-          <li className="Skills-list-item">CSS</li>
-          <li className="Skills-list-item">Unity</li>
-          <li className="Skills-list-item">C#</li>
-          <li className="Skills-list-item">TDD</li>
-          <li className="Skills-list-item">SOLID</li>
-        </ul>
-      </div>*/
