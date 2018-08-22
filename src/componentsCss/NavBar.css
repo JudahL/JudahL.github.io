@@ -44,8 +44,3 @@
   border: none;
 }
 
-@media screen and (max-width: 950px) {
-  .Nav-link {
-    margin-left: 10px;
-  }
-}

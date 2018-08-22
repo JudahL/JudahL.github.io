@@ -33,12 +33,10 @@ body,
 }
 
 .download-large {
-  color: #0d2e58;
+  color: #1f8559;
   text-decoration: none;
-  font-size: 1.5em;
-  font-weight: 800;
 }
 
 .download-large:hover {
-  color: #ad5de2;
+  color: #e69437;
 }

@@ -8,11 +8,9 @@ export default function Home() {
   return (
     <React.Fragment>
       <MainTitle text="SACUL HADUJ" desc="FULL-STACK DEVELOPER" showPic={true} />
-      <div className="Content">
-        <AboutMe />
-        <Skills />
-        <Contact />
-      </div>
+      <AboutMe />
+      <Skills />
+      <Contact />
     </React.Fragment>
   );
 }

@@ -18,7 +18,7 @@ export default function NavBar() {
           <Link to="/projects">
             <button className="Nav-link">
               Projects
-              </button>
+            </button>
           </Link>
           <Link to="/cv">
             <button className="Nav-link">

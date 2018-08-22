@@ -10,7 +10,9 @@ export default function DownloadCV() {
         rel="noopener noreferrer"
         className="download-large"
       >
-        Click Here to View and/or Download
+        <h3>
+          Click Here to View and/or Download
+        </h3>
       </a>
     </React.Fragment>
   );

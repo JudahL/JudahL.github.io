@@ -17,24 +17,11 @@
   height: 10em;
 }
 
-
-@media screen and (max-width: 1200px) {
-  .App-body {
-    max-width: 75%;
-  }
-}
-@media screen and (max-width: 800px) {
-  .App-body {
-    max-width: 85%;
-  }
-}
-
 @media screen and (max-width: 500px) {
   .App-body::after {
-    height: 190px;
+    height: 15em;
   }
   .App-body {
-    max-width: 95%;
-    margin-bottom: -190px;
+    margin-bottom: -15em;
   }
 }

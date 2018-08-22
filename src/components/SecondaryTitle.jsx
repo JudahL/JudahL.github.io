@@ -1,11 +1,12 @@
 import React, { PureComponent } from "react";
+import { Link } from "react-router-dom";
 import '../componentsCss/MainTitle.css';
 
 export default class SecondaryTitle extends PureComponent {
   render() {
-    const { text, desc } = this.props;
+    const { text, linkTo } = this.props;
     return (
-      <React.Fragment>
+      <Link to={linkTo}>
         <div className="MainTitle-container">
           <div className="MainTitle-content">
             <h2 className="MainTitle-name">
@@ -13,7 +14,7 @@ export default class SecondaryTitle extends PureComponent {
             </h2>
           </div>
         </div>
-      </React.Fragment>
+      </Link>
     );
   }
 }
