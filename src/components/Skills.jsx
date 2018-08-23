@@ -1,36 +1,31 @@
-import React from "react";
-import "../componentsCss/Skills.css";
+import React, { PureComponent } from "react";
+import SKILL_TYPES from '../SkillsInformation';
 
-export default function Skills() {
-  return (
-    <div className="Content-container">
-      <h3 className="Content-title">
-        SKILLS
-      </h3>
+export default class Skills extends PureComponent {
+  generateSkillList(skillList) {
+    return skillList.map(skill => `${skill}, `);
+  }
+
+  generateSkillParagraph(skillType) {
+    return (
       <p className="Content-paragraph">
         <h4 className="Content-subtitle">
-          Languages:
+          {`${skillType.type}:`}
         </h4>
-        HTML, Javascript, CSS, C#, Python.
+        {this.generateSkillList(skillType.skillList)}
       </p>
-      <p className="Content-paragraph">
-        <h4 h4 className="Content-subtitle">
-          Frameworks/Libraries:
-        </h4>
-        React, Redux, Node.js, Express, MongoDB, Unity.
-      </p>
-      <p className="Content-paragraph">
-        <h4 h4 className="Content-subtitle">
-          Editors:
-        </h4>
-        Visual Studio Code, Visual Studio, Brackets, Sublime Text.
-      </p>
-      <p className="Content-paragraph">
-        <h4 className="Content-subtitle">
-          Other:
-        </h4>
-        Test-Driven-Development, Version Control(Git/GitHub), SOLID Principles, Dependency Injection.
-      </p>
-    </div>
-  );
+    );
+  }
+
+  render() {
+    return (
+      <div className="Content-container">
+        <h3 className="Content-title">
+          SKILLS
+        </h3>
+        {SKILL_TYPES.map(skillType => this.generateSkillParagraph(skillType))}
+      </div>
+    );
+  }
 }
+

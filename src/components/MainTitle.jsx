@@ -66,7 +66,9 @@ export default class MainTitle extends React.Component {
               {text}
             </h2>
           </a>
-          <h2 className="MainTitle-desc">{description}</h2>
+          <h2 className="MainTitle-desc">
+            {description}
+          </h2>
           <div className="MainTitle-image-container">
             <img src={profilePic} className="MainTitle-image" />
           </div>

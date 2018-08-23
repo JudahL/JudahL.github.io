@@ -1,6 +1,4 @@
 import React, { PureComponent } from "react";
-import ObjectivesAppImage from "../images/ObjectivesApp.jpg";
-
 
 export default class ProjectPage extends PureComponent {
   getProjectLink() {
@@ -40,7 +38,7 @@ export default class ProjectPage extends PureComponent {
   }
 
   render() {
-    const { largeImage, title, fullDescription } = this.props.projectInfo;
+    const { largeImage, title } = this.props.projectInfo;
 
     return (
       <React.Fragment>

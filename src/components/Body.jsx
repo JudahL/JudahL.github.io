@@ -3,7 +3,6 @@ import "../componentsCss/Content.css";
 import React from "react";
 import Home from "./Home";
 import Projects from "./Projects";
-import ProjectPage from "./ProjectPage";
 import CV from "./CV";
 import { Route } from "react-router-dom";
 

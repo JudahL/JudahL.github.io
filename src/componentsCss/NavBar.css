@@ -20,6 +20,10 @@
   margin-left: 0.5em;
 }
 
+.Nav-title:hover {
+  color: #e69437;
+}
+
 .Nav-menu {
   float: right;
   margin-top: 0.5em;

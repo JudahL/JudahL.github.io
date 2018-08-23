@@ -7,13 +7,13 @@ export default function Contact() {
         CONTACT
       </h3>
       <p className="Content-paragraph">
-        Feel free to contact me at:{" "}
-        <a className="download" href={"mailto:" + email}>
-          {email}
+        {'Feel free to contact me at: '}
+        <a className="download" href={"mailto:" + EMAIL}>
+          {EMAIL}
         </a>
       </p>
     </div>
   );
 }
 
-const email = "judahdslucas@gmail.com";
+const EMAIL = "judahdslucas@gmail.com";

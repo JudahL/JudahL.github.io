@@ -6,9 +6,11 @@ export default function NavBar() {
   return (
     <nav className="Nav">
       <div className="Nav-container">
-        <h1 className="Nav-title">
-          JUDAH LUCAS
-        </h1>
+        <Link to="/">
+          <h1 className="Nav-title">
+            JUDAH LUCAS
+          </h1>
+        </Link>
         <div className="Nav-menu">
           <Link to="/">
             <button className="Nav-link">

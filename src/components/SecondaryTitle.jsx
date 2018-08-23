@@ -5,6 +5,7 @@ import '../componentsCss/MainTitle.css';
 export default class SecondaryTitle extends PureComponent {
   render() {
     const { text, linkTo } = this.props;
+
     return (
       <Link to={linkTo}>
         <div className="MainTitle-container">
