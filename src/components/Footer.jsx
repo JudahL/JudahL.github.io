@@ -1,44 +1,38 @@
-import React from "react";
+import React, { PureComponent } from "react";
 import "../componentsCss/Footer.css";
+import FOOTER_SOCIAL_LINKS from '../content/FooterSocialLinks';
 
-export default function Footer() {
-  return (
-    <footer className="Footer">
-      <div className="Footer-container">
-        <div className="Footer-social">
-          <div className="Footer-column">
-            <a
-              className="Footer-link"
-              href="https://www.linkedin.com/in/judah-lucas-29942743"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="Footer-button">
-                LinkedIn
-              </button>
-            </a>
-          </div>
-          <div className="Footer-column">
-            <a
-              className="Footer-link"
-              href="https://github.com/JudahL"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="Footer-button">
-                GitHub
-              </button>
-            </a>
-          </div>
-        </div>
-        <p className="Footer-created">created by judah lucas with react.js</p>
+class Footer extends PureComponent {
+  // Returns the html for a given footer social link button
+  renderLink(socialLink) {
+    return (
+      <div className="Footer-column">
+        <a
+          href={socialLink.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="Footer-button">
+            {socialLink.title}
+          </button>
+        </a>
       </div>
-    </footer>
-  );
+    );
+  }
+
+  // Returns the generated html for footer social link buttons based on the information provided in FOOTER_SOCIAL_LINKS
+  renderSocialLinks() {
+    return FOOTER_SOCIAL_LINKS.map(link => this.renderLink(link));
+  }
+
+  render() {
+    return (
+      <footer className="Footer">
+        {this.renderSocialLinks()}
+        <p className="Footer-created">created by judah lucas with react.js</p>
+      </footer>
+    );
+  }
 }
 
-/*<div>
-          <p className="Footer-contact-email">
-            contact: judahdslucas@gmail.com
-          </p>
-        </div>*/
+export default Footer;

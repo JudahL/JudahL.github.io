@@ -6,33 +6,23 @@
   box-sizing: border-box;
 }
 
-.Footer-social {
-  display: inline-block;
-  margin-bottom: 3em;
-}
-
 .Footer-column {
+  vertical-align: top;
   display: inline-block;
-  height: 100%;
   padding: 0.5em 0.5em;
-  box-sizing: border-box;
-}
-
-.Footer-link {
- 
 }
 
 .Footer-button {
   width: 6em;
-  color: #f0f0f0;
+  height: 2.5em;
   font-weight: 600;
-  text-decoration: none;
-  font-family: "Oswald";
   font-size: 1.5em;
   padding: 0.2em;
-  background: none;
+  background: none;  
+  color: #f0f0f0;
   border: 2px #f0f0f0 solid;
   cursor: pointer;
+  box-sizing: border-box;
 
   /* Transition */
   -o-transition: 0.2s;
@@ -45,10 +35,11 @@
 .Footer-button:hover {
   color: #222;
   background-color: #21ad71;
-  border: 2px #21ad71 solid;
+  border: none;
 }
 
 .Footer-created {
+  margin-top: 2em;
   text-align: center;
   font-size: 1em;
   font-weight: 200;

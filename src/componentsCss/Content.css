@@ -36,31 +36,6 @@
   height: 5em;
 }
 
-/* PROJECT STUFF : PUT IN A NEW FILE*/
-.Project-image-container {
-  float: left;
-  margin-top: 0.8em;
-  padding: 0.5em;
-  height: 8em;
-  width: 8em;
-  border: 2px #ddd solid;
-  box-sizing: border-box;
-}
-
-.Project-image {
-  height: 100%;
-  width: 100%;
-}
-
-.Project-information-container {
-  margin-left: 10em;  
-}
-
-.ProjectPage-image {
-  width: 100%;
-}
-
-
 @media screen and (max-width: 875px) {
   .Content {
     padding: 0em 1em;

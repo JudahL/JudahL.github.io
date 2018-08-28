@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../componentsCss/NavBar.css";
-
 import { HOME as HomePath, PROJECTS as ProjectsPath, CV as CVPath } from '../paths';
 
 export default function NavBar() {
@@ -17,7 +16,7 @@ export default function NavBar() {
           <Link to={HomePath}>
             <button className="Nav-link">
               Home
-              </button>
+            </button>
           </Link>
           <Link to={ProjectsPath}>
             <button className="Nav-link">
@@ -27,7 +26,7 @@ export default function NavBar() {
           <Link to={CVPath}>
             <button className="Nav-link">
               CV
-              </button>
+            </button>
           </Link>
         </div>
       </div>

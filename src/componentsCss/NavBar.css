@@ -40,6 +40,13 @@
   color: #222;
   border: 2px #ddd solid;
   box-sizing: border-box;
+
+  /* Transition */
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .Nav-link:hover {

@@ -1,7 +1,7 @@
 .MainTitle::before {
   content: "";
   display: block;
-  height: 15em;
+  height: 10em;
 }
 
 .MainTitle {
@@ -12,7 +12,7 @@
 .MainTitle::after {
   content: "";
   display: block;
-  height: 15em;
+  height: 10em;
 }
 
 .MainTitle-container {
@@ -35,7 +35,6 @@
   font-weight: 500;
   font-size: 2.2em;
 }
-/*#68917f - new: 3e7a60 evenNewer: 1f8559*/
 
 .MainTitle-image-container {
   float: right;
