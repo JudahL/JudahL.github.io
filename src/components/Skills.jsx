@@ -1,11 +1,19 @@
 import React, { PureComponent } from "react";
-import SKILL_TYPES from '../SkillsInformation';
+import SKILL_TYPES from '../content/SkillsInformation';
 
 export default class Skills extends PureComponent {
-  generateSkillList(skillList) {
-    return skillList.map(skill => `${skill}, `);
+  // Returns a fullstop if the element of given index is the last in the array or a comma if not
+  getCommaOrFullstop(skillList, index) {
+    return skillList.length === index + 1 ? '.' : ',';
   }
 
+  // Creates a returns a string of all the elements in the array seperated by commas
+  generateSkillList(skillList) {
+    return skillList.map((skill, index) => `${skill}${this.getCommaOrFullstop(skillList, index)} `);
+  }
+
+  // Creates and returns a styled paragraph based on the skillType information passed as a parameter
+  // SkillType contains the type (for example 'Programming Languages') and an array of the different skills of that type
   generateSkillParagraph(skillType) {
     return (
       <p className="Content-paragraph">
