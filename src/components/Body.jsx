@@ -11,9 +11,9 @@ export default function Body() {
   return (
     <div className="App-body">
       <div className="Content">
-        <Route exact path={HomePath} component={Home} />
-        <Route path={ProjectsPath} component={Projects} />
-        <Route path={CVPath} component={CV} />
+        <Route exact path={process.env.PUBLIC_URL + HomePath} component={Home} />
+        <Route path={process.env.PUBLIC_URL + ProjectsPath} component={Projects} />
+        <Route path={process.env.PUBLIC_URL + CVPath} component={CV} />
       </div>
     </div>
   );

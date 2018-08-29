@@ -11,9 +11,9 @@ export default function Projects() {
   return (
     <Fragment>
       <SecondaryTitle text="PROJECTS" linkTo={ProjectsPath} />
-      <Route exact path={ProjectsPath} component={ProjectsList} />
+      <Route exact path={process.env.PUBLIC_URL + ProjectsPath} component={ProjectsList} />
       {PROJECTS.map(project => {
-        return <Route path={project.linkTo} render={() => <ProjectPage projectInfo={project} />} />
+        return <Route path={process.env.PUBLIC_URL + project.linkTo} render={() => <ProjectPage projectInfo={project} />} />
       })}
     </Fragment>
   );
