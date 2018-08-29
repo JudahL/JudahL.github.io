@@ -7,7 +7,7 @@ export default class ProjectPage extends PureComponent {
     if (projectLink) {
       return (
         <p className="Content-paragraph">
-          The project can be found <a className="download" href={projectLink}>here</a>.
+          The project can be found <a className="download" href={projectLink}>here</a>. (It may take a few seconds to load as Heroku wakes the server up.)
         </p>
       );
     }
