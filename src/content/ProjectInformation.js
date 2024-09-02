@@ -1,3 +1,5 @@
+import CubicLocalesImage from "../images/CubicLocales.png";
+import CubicLocalesLargeImage from "../images/CubicLocalesWide.png";
 import ObjectivesAppImage from "../images/ObjectivesApp.jpg";
 import ObjectivesAppLargeImage from "../images/ObjectivesAppWide.jpg";
 import PortfolioSiteImage from "../images/PortfolioSite.jpg";
@@ -11,16 +13,29 @@ import { PROJECTS as ProjectsPath } from '../paths';
 
 const PROJECTS = [
   {
+    title: 'CUBIC LOCALES',
+    image: CubicLocalesImage,
+    largeImage: CubicLocalesLargeImage,
+    tech: 'C#, .NET, Javascript, React, Sqlite, Tailwind CSS, Azure, Vercel',
+    description: 'A full-stack app for setting up daily objectives.',
+    linkTo: ProjectsPath + '/cubic-locales',
+    projectLink: 'https://mc-places-react-client.vercel.app/',
+    githubLink: 'https://github.com/JudahL/MCPlaces-Backend',
+    fullDescription: ['This is a fullstack app I am creating to store the various builds my friends and I have built on our Minecraft server.',
+      'This project is still in development so it may be a little rough around the edges.',
+      'The front-end was built using React, Tailwind CSS was used for styling and is hosted on Vercel. The back-end uses .NET and a Sqlite database hosted on Azure.']
+  },
+  {
     title: 'DAILY OBJECTIVES APP',
     image: ObjectivesAppImage,
     largeImage: ObjectivesAppLargeImage,
     tech: 'React, Redux, Node.js, Express, MongoDB, CSS',
     description: 'A full-stack app for setting up daily objectives.',
     linkTo: ProjectsPath + '/daily-objectives-app',
-    projectLink: 'https://limitless-beyond-46458.herokuapp.com/',
+    projectLink: null,
     githubLink: 'https://github.com/JudahL/DailyObjectivesApp',
     fullDescription: ['This is a simple app I created to keep track of daily objectives and habits.',
-      'The front-end was built using React, and also utilises Redux for state management. The back-end uses the Node.js framework Express and a MongoDB database hosted on mLab.']
+      'The front-end was built using React, and also utilises Redux for state management. The back-end uses the Node.js framework Express and a MongoDB database.']
   },
   {
     title: 'PORTFOLIO SITE',

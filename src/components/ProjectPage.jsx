@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React, { PureComponent } from 'react';
 
 export default class ProjectPage extends PureComponent {
   getProjectLink() {
@@ -7,7 +7,11 @@ export default class ProjectPage extends PureComponent {
     if (projectLink) {
       return (
         <p className="Content-paragraph">
-          The project can be found <a className="download" href={projectLink}>here</a>. (It may take a few seconds to load as Heroku wakes the server up.)
+          The project can be found{' '}
+          <a className="download" href={projectLink}>
+            here
+          </a>
+          .
         </p>
       );
     }
@@ -19,7 +23,11 @@ export default class ProjectPage extends PureComponent {
     if (githubLink) {
       return (
         <p className="Content-paragraph">
-          Code can be found on GitHub <a className="download" href={githubLink}>here</a>.
+          Code can be found on GitHub{' '}
+          <a className="download" href={githubLink}>
+            here
+          </a>
+          .
         </p>
       );
     }
@@ -28,12 +36,8 @@ export default class ProjectPage extends PureComponent {
   getDescription() {
     const { fullDescription } = this.props.projectInfo;
 
-    return fullDescription.map(desc => {
-      return (
-        <p className="Content-paragraph">
-          {desc}
-        </p>
-      );
+    return fullDescription.map((desc) => {
+      return <p className="Content-paragraph">{desc}</p>;
     });
   }
 
@@ -46,9 +50,7 @@ export default class ProjectPage extends PureComponent {
           <img src={largeImage} className="ProjectPage-image" />
         </div>
         <div className="Content-container">
-          <h3 className="Content-title">
-            {title}
-          </h3>
+          <h3 className="Content-title">{title}</h3>
           {this.getDescription()}
           {this.getProjectLink()}
           {this.getGithubLink()}

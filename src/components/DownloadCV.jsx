@@ -1,17 +1,15 @@
-import React from "react";
-import "../App.css";
+import React from 'react';
+import '../App.css';
 
 export default function DownloadCV() {
   return (
     <a
-      href="https://drive.google.com/open?id=1fXhQlPRiAXUU__1qRmqltlg-iUwETDNm"
+      href="https://drive.google.com/file/d/1crYaWXmQt0L9m2IXilYnadJkZatqMaYy/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
       className="download-large"
     >
-      <h3>
-        Click Here to View and/or Download
-      </h3>
+      <h3>Click Here to View and/or Download</h3>
     </a>
   );
 }
